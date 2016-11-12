@@ -3,6 +3,7 @@ import re
 import urllib2
 import codecs
 import time
+import shutil
 import Setting
 import User
 import Problem
@@ -170,6 +171,7 @@ class ReadRankList:
             self.write_user_solution(user)
         self.write_poblems_state()
         self.finish_write()
+        self.create_finish_file()
 
     # 开始写入
     def begin_write(self):
@@ -248,3 +250,8 @@ class ReadRankList:
         self.rank_file.write(u'</table>')
         self.rank_file.write(u'</body>')
         self.rank_file.write(u'</html>')
+    # 生成最终文件
+    def create_finish_file(self):
+        self.rank_file.close()
+        shutil.move(Setting.temp_rank_list_file_name,Setting.rank_list_file_name)
+

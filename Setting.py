@@ -30,4 +30,4 @@ temp_rank_list_file_name = '~RankList.html'
 # 能否循环执行
 can_loop = True
 # 如果循环执行，循环的间隔时间(s)
-interval_time = 120
+interval_time = 1
