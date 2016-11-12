@@ -28,6 +28,6 @@ rank_list_file_name = 'RankList.html'
 # 临时排名文件名
 temp_rank_list_file_name = '~RankList.html'
 # 能否循环执行
-can_loop = True
+can_loop = False
 # 如果循环执行，循环的间隔时间(s)
-interval_time = 1
+interval_time = 120
