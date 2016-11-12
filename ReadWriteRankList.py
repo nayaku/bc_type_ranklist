@@ -242,8 +242,12 @@ class ReadRankList:
         for problem in self.problem_list:
             self.rank_file.write(u'<td><div><span class="ac">' + str(problem.ac_number) + u'</span>/')
             self.rank_file.write(u'<span class="tried">' + str(problem.submit_number) + u'</span></div>')
+            if problem.submit_number is not 0:
+                ratio = 100 * problem.ac_number / problem.submit_number
+            else:
+                ratio = 0
             self.rank_file.write(
-                u'<div class="ratio">' + str(100 * problem.ac_number / problem.submit_number) + u'%</div></td>')
+                u'<div class="ratio">' + str(ratio) + u'%</div></td>')
 
     # 结束写入
     def finish_write(self):

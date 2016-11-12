@@ -8,7 +8,7 @@ MNNU_url = 'http://acm.mnnu.edu.cn'
 # Content id 地址
 
 # Contest RANKLIST 网址
-url = 'http://acm.mnnu.edu.cn/Contest/ranklist/cid/1945.htm'
+url = 'http://acm.mnnu.edu.cn/Contest/ranklist/cid/2027.htm'
 # 重试时间
 time_out = 60
 # 默认分数
