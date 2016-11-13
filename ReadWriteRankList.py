@@ -123,7 +123,7 @@ class ReadRankList:
             cost_time /= 60  # 花费时间转化为(min)
             mark = self.problem_list[index].mark - cost_time * Setting.decrease_mark_each_minute
             if mark < (1.0 - Setting.max_decrease_with_time) * self.problem_list[index].mark:
-                mark = int(Setting.base_mark * self.problem_list[index].mark)
+                mark = int((1.0 - Setting.max_decrease_with_time) * self.problem_list[index].mark)
             solve_problem.mark = mark
 
         # 获取错误的次数
