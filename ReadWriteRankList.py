@@ -254,8 +254,8 @@ class ReadRankList:
         self.rank_file.write(u'</table>')
         self.rank_file.write(u'</body>')
         self.rank_file.write(u'</html>')
+
     # 生成最终文件
     def create_finish_file(self):
         self.rank_file.close()
-        shutil.move(Setting.temp_rank_list_file_name,Setting.rank_list_file_name)
-
+        shutil.move(Setting.temp_rank_list_file_name, Setting.rank_list_file_name)
