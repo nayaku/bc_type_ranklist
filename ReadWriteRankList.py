@@ -112,6 +112,7 @@ class ReadRankList:
             for item in items:
                 if item == '#00ff99':
                     solve_problem.is_first = True
+                    
         # 如果AC算出因为时间而减少的分数
         pattern = re.compile(u'''<div class='rank_actime'>(.*?):(.*?):(.*?)</div>''', re.S)
         items = re.findall(pattern, solution)
