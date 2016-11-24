@@ -16,7 +16,7 @@ default_mark = 1000
 # 每题的分数，如果未指定为默认分数
 mark_list = [500, 500, 500, 900, 1000, 1200, 1200, 1500, 2000]
 # 每题最大随时间而减少的分数比率
-max_decrease_with_time = 1.0 / 5.0
+max_decrease_with_time = 1.0 / 2.0
 # 每分钟减少的分数
 decrease_mark_each_minute = 4
 # 每次错误减少的分数
